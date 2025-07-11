@@ -12,7 +12,7 @@ public final class CommonConstants {
 
   public static final String API_CONTEXT = "/**";
 
-  public static final String SYSTEM_USER = "SYSTEM";
+  public static final String SYSTEM_USER = "system";
 
   public static final String HEADER_EXPAND = "x-expand";
 

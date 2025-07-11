@@ -2,10 +2,11 @@ spring:
   docker:
     compose:
       enabled: true
-      file: compose.yml
+#      file: compose.yml
+      file: spring-boot-activity-tracker-demo/compose.yml
   data:
     mongodb:
-      uri: mongodb://localhost:27017
+      uri: mongodb://localhost:27018
 
 problem:
   debug-enabled: false

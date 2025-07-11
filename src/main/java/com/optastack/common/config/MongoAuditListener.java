@@ -17,7 +17,6 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.boot.autoconfigure.mongo.MongoProperties;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.event.EventListener;
@@ -39,7 +38,8 @@ import org.springframework.util.Assert;
 @ConditionalOnProperty(
     prefix = "application.mongodb.auditing",
     name = "enabled",
-    havingValue = "true", matchIfMissing = true)
+    havingValue = "true",
+    matchIfMissing = true)
 @Slf4j
 @RequiredArgsConstructor
 public class MongoAuditListener implements InitializingBean {

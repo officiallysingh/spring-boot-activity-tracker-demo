@@ -1,7 +1,5 @@
 package com.optastack.common.config;
 
-import com.ksoot.activity.model.AuthorProvider;
-import com.ksoot.activity.model.MockAuthorProvider;
 import com.optastack.common.util.MessageProvider;
 import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -35,10 +33,10 @@ public class GeneralAutoConfiguration {
   }
 
   // Uncomment if you want to use just a hardcoded author name always.
-    @Bean
-    AuthorProvider authorProvider() {
-      return new MockAuthorProvider();
-    }
+  //  @Bean
+  //  AuthorProvider authorProvider() {
+  //    return new MockAuthorProvider();
+  //  }
 
   //  @Bean
   //  AuthorProvider authorProvider(@Value("#{systemProperties['user.name']}") String
